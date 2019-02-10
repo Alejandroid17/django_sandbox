@@ -8,3 +8,10 @@ __pycache__/
 *.pot
 *.pyc
 __pycache__/
+
+# Ignore migrations
+migrations/
+!migrations/__init__.py
+
+# Ignore PyCharm
+.idea/
