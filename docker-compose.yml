@@ -4,13 +4,13 @@ services:
   db:
     image: postgres:11.1
     environment:
-      POSTGRES_PASSWORD: testing-django
+      POSTGRES_PASSWORD: django_sandbox
     ports: 
       - "5432:5432"
 
   web:
     build: .
-    image: alejandro17/testing-django:0.0.0
+    image: alejandro17/django_sandbox:0.0.0
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
